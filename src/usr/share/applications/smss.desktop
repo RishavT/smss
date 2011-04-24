@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=0.1
+Name=SMSS
+Comment=Desktop application to send SMSs via way2sms portal
+Categories=Network;
+Exec=/usr/bin/smss
+Terminal=false
+Type=Application
+Name[en_US]=SMSS
+GenericName[en_US]=SMSS
+Comment[en_US]=Desktop application to send SMSs via way2sms portal
