@@ -1,0 +1,62 @@
+*************************************
+               README
+*************************************
+This is the README for smss.
+*************************************
+            DEPENDENCIES
+*************************************
+You'll need:
+1. wxpython (http://wxpython.org/)
+2. pycurl	(http://pycurl.sourceforge.net/)
+3. curl		(http://curl.haxx.se/download.html)
+
+If on Ubuntu (or its derivative), then run the following to install dependencies.
+
+	sudo apt-get install curl libnotify-bin python-wxgtk2.8 python-wxtools wx2.8-i18n install python-gdata
+*************************************
+            INSTALLATION
+*************************************
+
+To install smss, run the following:
+
+	cd <this directory>
+	make
+	sudo make install
+	
+
+*************************************
+              REMOVAL
+*************************************
+For removing, run the following commands:
+	
+	sudo rm /usr/bin/smss
+	sudo -R rm /usr/share/smss
+	
+If that doesn't work, then run:
+	
+	su
+	rm /usr/bin/smss
+	rm -R /usr/share/smss
+
+Then run:
+	rm ~/.gnome2/nautilus-scripts/Upload\ To\ Facebook
+
+For removing configuration files, run:
+	rm -R ~/.smss
+	
+*************************************
+         RUNNING smss
+*************************************
+To run, go to Applications>>Internet>>SMSS
+
+If that doesn't work, run
+	smss
+from the terminal or a run dialog.
+
+*************************************
+*************************************
+For reporting bugs, go to:
+	http://github.com/RishavT/smss
+	
+or email me at:
+	thakker.rishav@gmail.com
