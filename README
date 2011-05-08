@@ -39,8 +39,6 @@ If that doesn't work, then run:
 	rm /usr/bin/smss
 	rm -R /usr/share/smss
 
-Then run:
-	rm ~/.gnome2/nautilus-scripts/Upload\ To\ Facebook
 
 For removing configuration files, run:
 	rm -R ~/.smss
