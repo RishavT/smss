@@ -1,6 +1,7 @@
 [Desktop Entry]
 Version=0.1
 Name=SMSS
+Icon=smss
 Comment=Desktop application to send SMSs via way2sms portal
 Categories=Network;
 Exec=/usr/bin/smss

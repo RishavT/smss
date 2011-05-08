@@ -5,7 +5,8 @@ import sms
 import Contacts
 import sys
 homedir = os.getenv("HOME")
-os.system("mkdir " + homedir + "/.smss")
+if os.path.isdir(homedir + "/.smss")==False:
+	os.system("mkdir " + homedir + "/.smss")
 cli_args = sys.argv[1:]
 class AddressBook(wx.Frame):
 	def __init__(self):
