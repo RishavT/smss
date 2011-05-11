@@ -103,12 +103,14 @@ class AddressBook(wx.Frame):
 #				self.SetSelection(y,False)
 			y +=1
 	def storegcred(self):
-		os.system("rm " + homedir + "/.smss/gcred")
-		f = open(homedir + "/.smss/gcred","a")
+		if os.path.exists(homedir+"/.smss/gcred")==False:
+			f = open(homedir+"/.smss/gcred","a")
+			f.close()
+		f = open(homedir + "/.smss/gcred","w")
 		f.writelines([self.uname + '\n',self.passw])
 		f.close()
 	def getgcred(self):
-		if os.system("ls " + homedir + "/.smss/gcred") > 0:
+		if os.path.exists(homedir + "/.smss/gcred") == False:
 			self.uname = ''
 			self.passw = ''
 		else:
@@ -192,7 +194,7 @@ class MyFrame(wx.Frame):
 			yy[0] = yy[0].replace('\n','')
 			yy[1] = yy[1].replace('\n','')
 			self.lock()
-		except IOError:
+		except Exception:
 			yy = ['','']
 		wx.Frame.__init__(self,None,-1,"sms-bot",size=(400,350))
 		panel = wx.Panel(self)
@@ -234,6 +236,38 @@ class MyFrame(wx.Frame):
 		self.condense_button = wx.Button(panel,-1,"Condense",pos=(10,255),size=(163,30))
 		self.Bind(wx.EVT_BUTTON,self.condense_text,self.condense_button)
 		self.condense_button.Hide()
+		
+		
+		#Menubar
+		self.menubar = wx.MenuBar()
+		
+		#FileMenu
+		file_menu = wx.Menu()
+		
+		#ResetMenuItem
+		reset_menuitem = file_menu.Append(-1,"Reset All Settings","Reset all settings to their defaults. This includes saved password and contacts")
+		self.Bind(wx.EVT_MENU,self.reset,reset_menuitem)
+		
+		#ExitMenuItem
+		exit_menuitem = file_menu.Append(-1,"Exit","Exit this application")
+		self.Bind(wx.EVT_MENU,self.exit,exit_menuitem)
+		
+		self.menubar.Append(file_menu,"File")
+		self.SetMenuBar(self.menubar)
+		
+	def reset(self,ev):
+		msg = wx.MessageDialog(None,"Are you sure you want to reset all settings? This will delete all saved password and contacts.","Are you sure")
+		if msg.ShowModal()==wx.ID_OK:
+			msg.Destroy()
+			os.system("rm -R ~/.smss")
+			self.Hide()
+			wx.Yield()
+			os.system("smss")
+			self.Destroy()
+		else:
+			msg.Destroy()
+	def exit(self,ev):
+		self.Destroy()
 	def oh_no(self,ev):
 		msg = wx.MessageDialog(None,"Character limit of 140 exceeded! Click 'Condense' to condense the text. If you send a message exceeding the character limit, it will be sent as 2 messages","Note")
 		msg.ShowModal()
@@ -295,12 +329,15 @@ class MyFrame(wx.Frame):
 			self.exceed.Hide()
 			self.condense_button.Hide()
 	def sendmsg(self,ev):
-		if os.system("ls " + homedir + "/.smss/cred") > 0:
+		if os.path.exists(homedir + "/.smss/cred") == False:
 			a = wx.MessageDialog(None,"Do you want us to remember your way2sms number + password?","Remember " + homedir + "/.smss/credentials")
 			if a.ShowModal()==wx.ID_OK:
 				self.unlock()
-				os.system("rm " + homedir + "/.smss/cred")
-				f = open(homedir + "/.smss/cred","a")
+				if os.path.exists(homedir+"/.smss/cred")==False:
+					f = open(homedir+"/.smss/cred","a")
+					f.write("")
+					f.close()
+				f = open(homedir + "/.smss/cred","w")
 				f.write(self.user.GetValue() + "\n" + self.password.GetValue())
 				f.close()
 				self.lock()
@@ -338,7 +375,7 @@ class MyFrame(wx.Frame):
 		self.Destroy()
 		wx.Exit()
 if __name__=='__main__':
-	if os.system("ls " + homedir + "/.smss/.abbreviations") <> 0 or os.system("ls " + homedir + "/.smss/.num_abbreviations") <> 0:
+	if os.path.exists(homedir + "/.smss/.abbreviations") == False or os.path.exists(homedir + "/.smss/.num_abbreviations") ==False:
 		os.system("cp /usr/share/smss/.*abbreviations " + homedir + "/.smss")
 	app = wx.PySimpleApp()
 	fframe = MyFrame()
