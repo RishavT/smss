@@ -43,6 +43,11 @@ class AddressBook(wx.Frame):
 		self.clist.Bind(wx.EVT_KEY_DOWN,self.key_press)
 		
 		self.search_text = wx.StaticText(self.panel,-1,'',pos=(10,350),size=(100,30))
+		
+		self.Bind(wx.EVT_CLOSE,self.close_event)
+	def close_event(self,ev):
+		self.MakeModal(False)
+		self.Destroy()
 	def key_press(self,ev):
 		self.keylist = ['']
 		print "hey pressed!!"
@@ -139,7 +144,7 @@ class AddressBook(wx.Frame):
 	def getstr(self):
 		return self.string
 	def exit(self,ev):
-		self.Destroy()
+		self.close_event(1)
 		return
 	def lister(self):
 		a = ['']
@@ -276,6 +281,7 @@ class MyFrame(wx.Frame):
 	def address_book(self,ev):
 		self.adb = AddressBook()
 		self.adb.Show()
+		self.adb.MakeModal(True)
 	def ref(self):
 		self.recipent.SetValue(self.adb.getstr())
 	def setlimit(self,ev):
