@@ -1,0 +1,29 @@
+Origin: Rishav
+Label: Rishavs_Repo
+Suite: stable
+Codename: maverick
+Version: 1.0
+SignWith: yes
+Architectures: i386 amd64 source
+Components: main non-free contrib
+Description: Rishav's Repository for maverick
+
+Origin: Rishav
+Label: Rishavs_Repo
+Suite: stable
+Codename: natty
+Version: 1.0
+SignWith: default
+Architectures: i386 amd64 source
+Components: main non-free contrib
+Description: Rishav's Repository for natty
+
+Origin: Rishav
+Label: Rishavs_Repo
+Suite: stable
+Codename: lucid
+Version: 1.0
+SignWith: default
+Architectures: i386 amd64 source
+Components: main non-free contrib
+Description: Rishav's Repository for lucid

@@ -1,0 +1,50 @@
+Package: python-gdata
+Version: 2.0.8-1.1
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Gustavo Franco <stratus@debian.org>
+Installed-Size: 16268
+Depends: python, python-support (>= 0.90.0), python (>= 2.5) | python-celementtree | python-elementtree
+Homepage: http://code.google.com/p/gdata-python-client
+Priority: extra
+Section: python
+Filename: pool/main/p/python-gdata/python-gdata_2.0.8-1.1_all.deb
+Size: 1403866
+SHA256: bc15d75983212890a14d391562392da61f953a1d707c2cab5cc7fdef4cad290f
+SHA1: 3b2ca90946e4d256e34d51d32d9f21d7a0b9ae8a
+MD5sum: ac71ac2506c6b53c2197ccc65b7675af
+Description: Google Data Python client library
+ The GData (Google data) APIs provide a simple protocol for reading
+ and writing data on the web.
+ .
+ Each of the following Google services provides a Google data API:
+   * Base
+   * Blogger
+   * Calendar
+   * Code Search
+   * Contacts
+   * Document List
+   * Google Apps Provisioning
+   * Notebook
+   * Picasa Web Albums
+   * Spreadsheets
+   * YouTube
+ .
+ The Google data Python client library provides a library and source
+ code that make it easy to access data through Google data APIs.
+
+Package: smss
+Version: 0.2dev6
+Architecture: all
+Maintainer: Rishav Thakker <thakker.rishav@gmail.com>
+Depends: python (>= 2.6), python-gdata (>= 2.0.8-1.1), curl, python-httplib2, python-wxgtk2.8, python-wxtools, wx2.8-i18n
+Priority: optional
+Section: utils
+Filename: pool/main/s/smss/smss_0.2dev6_all.deb
+Size: 85358
+SHA256: be52813a6facfe539bbb10010bc4c27b076cdd637112de4cc6b794c722860fc8
+SHA1: c0417f349df3eea25063b7109cd6f2fa4599b801
+MD5sum: b4d155fae1dd266b6ea814629033617c
+Description: SMSS
+ A simple desktop application to send SMSs via the way2sms portal. For more information about way2sms, go to http://way2sms.com/
+
