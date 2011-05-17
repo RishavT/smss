@@ -3,16 +3,16 @@ Label: Rishavs_Repo
 Suite: stable
 Codename: lucid
 Version: 1.0
-Date: Wed, 11 May 2011 18:20:19 UTC
+Date: Tue, 17 May 2011 09:37:29 UTC
 Architectures: i386 amd64
 Components: main non-free contrib
 Description: Rishav's Repository for lucid
 MD5Sum:
- 67faa2573271d567191c97dd6dd57d6a 1806 main/binary-i386/Packages
- aa0db618a2d787f6df1487714d652ab4 1005 main/binary-i386/Packages.gz
+ 6f93ca80f8dd119ceff6ef9bcaab45dc 1806 main/binary-i386/Packages
+ 85df19ad0753c3c599701d7376a59c95 1005 main/binary-i386/Packages.gz
  9ec0d285fab932fa27bd03a474b23296 142 main/binary-i386/Release
- 67faa2573271d567191c97dd6dd57d6a 1806 main/binary-amd64/Packages
- aa0db618a2d787f6df1487714d652ab4 1005 main/binary-amd64/Packages.gz
+ 6f93ca80f8dd119ceff6ef9bcaab45dc 1806 main/binary-amd64/Packages
+ 85df19ad0753c3c599701d7376a59c95 1005 main/binary-amd64/Packages.gz
  3aead80a85af0a68a9c9fd423cac1443 143 main/binary-amd64/Release
  d41d8cd98f00b204e9800998ecf8427e 0 main/source/Sources
  7029066c27ac6f5ef18d660d5741979a 20 main/source/Sources.gz
@@ -36,11 +36,11 @@ MD5Sum:
  7029066c27ac6f5ef18d660d5741979a 20 contrib/source/Sources.gz
  4cb0c544f774b3e7f28f541bf8b56a31 147 contrib/source/Release
 SHA1:
- 7802df13241e571e38ea62fbb8341f9f9a3c97f8 1806 main/binary-i386/Packages
- fc603c8ee48086450516e4a91bcaa218fe8cffc8 1005 main/binary-i386/Packages.gz
+ 6d037c37c1852c105fea24cce8b1cb1c3daf462d 1806 main/binary-i386/Packages
+ ce9ae6dcd1b94203c3b8ad111530cd744f33ca37 1005 main/binary-i386/Packages.gz
  77d5fa79a992b78900ff5fe70b8a60718d848e98 142 main/binary-i386/Release
- 7802df13241e571e38ea62fbb8341f9f9a3c97f8 1806 main/binary-amd64/Packages
- fc603c8ee48086450516e4a91bcaa218fe8cffc8 1005 main/binary-amd64/Packages.gz
+ 6d037c37c1852c105fea24cce8b1cb1c3daf462d 1806 main/binary-amd64/Packages
+ ce9ae6dcd1b94203c3b8ad111530cd744f33ca37 1005 main/binary-amd64/Packages.gz
  5afae22cd2f6105da3306ff9c1684ba21371cfa5 143 main/binary-amd64/Release
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/source/Sources
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/source/Sources.gz
@@ -64,11 +64,11 @@ SHA1:
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 contrib/source/Sources.gz
  def0bdff4549cdd48f14196c4a9456cdd9776fc8 147 contrib/source/Release
 SHA256:
- f5e590aedf7939465e761c23ee43b00536f483fa6405127e4f2d95d0e814e062 1806 main/binary-i386/Packages
- 4c5c69c483b10ca5dbcf3c37c6466d39d238aa556f80bb5b80efb7e6271cbc46 1005 main/binary-i386/Packages.gz
+ b0f60ae556df767e0817decadbdf12c078920d229b8e3d274414d899855e0263 1806 main/binary-i386/Packages
+ c58e812efbdcdd27a1a3fe92109dec280c429aab71a7c9f1dac1340535a80e36 1005 main/binary-i386/Packages.gz
  241ae3cc2fbe4279ff2ea1be4672af8618b60a134434087ef3c72822d3ae55ff 142 main/binary-i386/Release
- f5e590aedf7939465e761c23ee43b00536f483fa6405127e4f2d95d0e814e062 1806 main/binary-amd64/Packages
- 4c5c69c483b10ca5dbcf3c37c6466d39d238aa556f80bb5b80efb7e6271cbc46 1005 main/binary-amd64/Packages.gz
+ b0f60ae556df767e0817decadbdf12c078920d229b8e3d274414d899855e0263 1806 main/binary-amd64/Packages
+ c58e812efbdcdd27a1a3fe92109dec280c429aab71a7c9f1dac1340535a80e36 1005 main/binary-amd64/Packages.gz
  f9207a1d3ff574b402ebc4ff05b2987874a8e7d4afd773c6103d0331cc21fcc9 143 main/binary-amd64/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/source/Sources
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/source/Sources.gz
