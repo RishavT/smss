@@ -23,28 +23,87 @@ class AddressBook(wx.Frame):
 			pass
 		wx.Frame.__init__(self,None,-1,"Address Book",size=(400,400))
 		self.panel = wx.Panel(self)
-		wx.StaticText(self.panel,-1,"This is your address Google Address book.\n\nTo get started, click on 'Set up account' button (to import your google contacts)",pos=(10,10),size=(380,80))
+		wx.StaticText(self.panel,-1,"This is your address Google Address book.\n\nTo get started, click on File>>'Change Google User' (to import your google contacts). To refresh them, click on File>>Refresh List",pos=(10,10),size=(380,80))
 		
-		set_up_ac = wx.Button(self.panel,-1,'Set up account', pos = (130,90), size = (170,30))
-		self.Bind(wx.EVT_BUTTON,self.get,set_up_ac)
+		#set_up_ac = wx.Button(self.panel,-1,'Set up account', pos = (150,90), size = (150,30))
+		#self.Bind(wx.EVT_BUTTON,self.get,set_up_ac)
 		
-		refresh_button = wx.Button(self.panel,-1,"Refresh",pos = (310,90), size = (80,30))
-		self.Bind(wx.EVT_BUTTON,self.cget,refresh_button)
+		#refresh_button = wx.Button(self.panel,-1,"Refresh",pos = (310,90), size = (80,30))
+		#self.Bind(wx.EVT_BUTTON,self.cget,refresh_button)
 		
 		self.clist = wx.CheckListBox(self.panel,-1,(10,130),(380,200),self.lister())
 		self.clist.SetSelection(0)
 		
-		select = wx.Button(self.panel,-1,'Select',pos=(180,350),size=(100,27))
+		select = wx.Button(self.panel,-1,'OK',pos=(180,340),size=(100,27))
 		self.Bind(wx.EVT_BUTTON,self.sel, select)
 		
-		canc = wx.Button(self.panel,-1,'Cancel',pos=(290,350),size=(100,27))
+		canc = wx.Button(self.panel,-1,'Cancel',pos=(290,340),size=(100,27))
 		self.Bind(wx.EVT_BUTTON,self.exit,canc)
+		
+		select_all = wx.Button(self.panel,-1,'Select All',pos=(180,100), size = (100,25))
+		self.Bind(wx.EVT_BUTTON,self.selectall,select_all)
+		
+		select_none = wx.Button(self.panel,-1,'Select None',pos = (290,100), size = (100,25))
+		self.Bind(wx.EVT_BUTTON,self.selectnone,select_none)
 		
 		self.clist.Bind(wx.EVT_KEY_DOWN,self.key_press)
 		
 		self.search_text = wx.StaticText(self.panel,-1,'',pos=(10,350),size=(100,30))
 		
 		self.Bind(wx.EVT_CLOSE,self.close_event)
+		
+		##Menubar##:
+		self.menubar = wx.MenuBar()
+		
+		#FileMenu
+		self.filemenu = wx.Menu()
+		
+		#Refresh
+		refresh_menuitem = self.filemenu.Append(-1,"Refresh List","Refresh your Google contacts list from your Google account")
+		self.Bind(wx.EVT_MENU,self.cget,refresh_menuitem)
+		
+		#Set up account
+		sua_menuitem = self.filemenu.Append(-1,"Change Google user","Set up Google contacts sync account")
+		self.Bind(wx.EVT_MENU,self.get,sua_menuitem)
+		
+		self.menubar.Append(self.filemenu,"File")
+		self.SetMenuBar(self.menubar)
+		
+		self.set_checked()
+	def selectall(self,ev):
+		x = 0
+		while x < len(self.contacts):
+			self.clist.Check(x,True)
+			x += 1
+	def selectnone(self,ev):
+		x = 0
+		while x < len(self.contacts):
+			self.clist.Check(x,False)
+			x += 1
+	def set_checked(self):
+		tstring = fframe.recipent.GetValue()
+		print tstring
+		if len(tstring) == 0:
+			return
+		if tstring[-1]==',':
+			tstring = tstring[:-1]
+		tstring2 = tstring.split(",")
+		for x in tstring2:
+			x = x[x.find(")")+1:]
+			no = 0
+			no2 = 0
+			while no < len(self.contacts):
+				y = self.contacts[no][1]
+				yy = ""
+				for a in y:
+					if a in "1234567890":
+						yy += a
+				if x in yy:
+					no = len(self.contacts)
+				else:
+					no += 1
+					no2 += 1
+			self.clist.Check(no2,True)
 	def close_event(self,ev):
 		self.MakeModal(False)
 		self.Destroy()
