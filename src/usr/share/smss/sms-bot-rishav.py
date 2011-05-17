@@ -196,7 +196,7 @@ class MyFrame(wx.Frame):
 			self.lock()
 		except Exception:
 			yy = ['','']
-		wx.Frame.__init__(self,None,-1,"sms-bot",size=(400,350))
+		wx.Frame.__init__(self,None,-1,"sms-bot",size=(400,370))
 		panel = wx.Panel(self)
 		wx.StaticText(panel,-1,"Your Number:",pos=(10,10))
 		self.user = wx.TextCtrl(panel,-1,yy[0],size=(210,30),pos=(180,5))
@@ -254,6 +254,9 @@ class MyFrame(wx.Frame):
 		
 		self.menubar.Append(file_menu,"File")
 		self.SetMenuBar(self.menubar)
+		print self.menubar.GetSize()
+		uniself.menubar.SetSize((1,1))
+		print "lolo"
 		
 	def reset(self,ev):
 		msg = wx.MessageDialog(None,"Are you sure you want to reset all settings? This will delete all saved password and contacts.","Are you sure")
