@@ -244,6 +244,10 @@ class MyFrame(wx.Frame):
 		#FileMenu
 		file_menu = wx.Menu()
 		
+		#GlobalMenuSupport_MenuItem
+		gmsupport_menuitem = file_menu.Append(-1,"Global Menu Support","Enable/Disable Global menu support")
+		self.Bind(wx.EVT_MENU,self.global_menu_support,gmsupport_menuitem)
+		
 		#ResetMenuItem
 		reset_menuitem = file_menu.Append(-1,"Reset All Settings","Reset all settings to their defaults. This includes saved password and contacts")
 		self.Bind(wx.EVT_MENU,self.reset,reset_menuitem)
@@ -254,9 +258,35 @@ class MyFrame(wx.Frame):
 		
 		self.menubar.Append(file_menu,"File")
 		self.SetMenuBar(self.menubar)
-		print self.menubar.GetSize()
-		uniself.menubar.SetSize((1,1))
-		print "lolo"
+		self.menubar.Hide()
+		
+		if os.path.exists(homedir+"/.smss/.gmsupport") == False:
+			f = open(homedir+"/.smss/.gmsupport","a")
+			f.close()
+			self.global_menu_support(1)
+		else:
+			f = open(homedir+"/.smss/.gmsupport","r")
+			if f.read()=="yes":
+				self.SetSize((400,350))
+			f.close()
+	def global_menu_support(self,ev):
+		f = open(homedir+"/.smss/.gmsupport","r")
+		x = f.read()
+		f.close()
+		if x <> "yes":
+			msg = wx.MessageDialog(None,"Global menu support is disabled. Do you want to enable it? (If you're using Unity, select yes)","Global Menu support",wx.YES_NO)
+			if msg.ShowModal() == wx.ID_YES:
+				f = open(homedir+"/.smss/.gmsupport","w")
+				f.write("yes")
+				f.close()
+				self.SetSize((400,350))
+		else:
+			msg = wx.MessageDialog(None,"Global menu support is enabled. Do you want to disable it?","Global Menu support",wx.YES_NO)
+			if msg.ShowModal() <> wx.ID_NO:
+				f = open(homedir+"/.smss/.gmsupport","w")
+				f.write("no")
+				f.close()
+				self.SetSize((400,370))
 		
 	def reset(self,ev):
 		msg = wx.MessageDialog(None,"Are you sure you want to reset all settings? This will delete all saved password and contacts.","Are you sure")
