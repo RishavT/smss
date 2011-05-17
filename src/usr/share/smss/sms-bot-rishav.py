@@ -23,7 +23,7 @@ class AddressBook(wx.Frame):
 			pass
 		wx.Frame.__init__(self,None,-1,"Address Book",size=(400,400))
 		self.panel = wx.Panel(self)
-		wx.StaticText(self.panel,-1,"This is your address Google Address book.\n\nTo get started, click on File>>'Change Google User' (to import your google contacts). To refresh them, click on File>>Refresh List",pos=(10,10),size=(380,80))
+		wx.StaticText(self.panel,-1,"This is your address Google Address book.\nTo get started, click on File>>'Change Google User' (to import your google contacts). To refresh them, click on File>>Refresh List",pos=(10,10),size=(380,80))
 		
 		#set_up_ac = wx.Button(self.panel,-1,'Set up account', pos = (150,90), size = (150,30))
 		#self.Bind(wx.EVT_BUTTON,self.get,set_up_ac)
@@ -316,6 +316,15 @@ class MyFrame(wx.Frame):
 		self.Bind(wx.EVT_MENU,self.exit,exit_menuitem)
 		
 		self.menubar.Append(file_menu,"File")
+		
+		#Help Menu
+		help_menu = wx.Menu()
+		
+		#About
+		about_menuitem = help_menu.Append(-1,"About","About this application")
+		
+		self.menubar.Append(help_menu, "Help")
+		self.Bind(wx.EVT_MENU,self.about,about_menuitem)
 		self.SetMenuBar(self.menubar)
 		self.menubar.Hide()
 		
@@ -328,6 +337,37 @@ class MyFrame(wx.Frame):
 			if f.read()=="yes":
 				self.SetSize((400,350))
 			f.close()
+		try:
+			self.SetIcon(wx.Icon("/usr/share/pixmaps/smss.png",wx.BITMAP_TYPE_PNG))
+		except:
+			pass
+	def about(self,ev):
+		license = """ Copyright (C) 2011  Rishav Thakker
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+For more information, see http://www.gnu.org/licenses """
+		info = wx.AboutDialogInfo()
+		info.SetName("SMSS")
+		info.SetVersion("0.2")
+		info.SetDescription("A simple application to send free SMSs via the Way2SMS Portal.")
+		info.SetCopyright("(c) Rishav Thakker")
+		info.SetLicence(license)
+		info.SetWebSite("http://rishavt.github.com/smss")
+		info.AddDeveloper("Rishav Thakker")
+		try:
+			info.SetIcon(wx.Icon("/usr/share/smss/icon.png", wx.BITMAP_TYPE_PNG))
+		except:
+			pass
+		wx.AboutBox(info)
 	def global_menu_support(self,ev):
 		f = open(homedir+"/.smss/.gmsupport","r")
 		x = f.read()
