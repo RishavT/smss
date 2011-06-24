@@ -34,17 +34,17 @@ Description: Google Data Python client library
  code that make it easy to access data through Google data APIs.
 
 Package: smss
-Version: 0.3
+Version: 0.3dev3
 Architecture: all
 Maintainer: Rishav Thakker <thakker.rishav@gmail.com>
 Depends: python (>= 2.6), python-gdata (>= 2.0.8-1.1), curl, python-httplib2, python-wxgtk2.8, python-wxtools, wx2.8-i18n
 Priority: optional
 Section: utils
-Filename: pool/main/s/smss/smss_0.3_all.deb
-Size: 135728
-SHA256: 1cf20a642190b414448af3ecb71edd683b52d480c0a157d5ccca2ffde103a5f8
-SHA1: a00c59b680297e56efa5c877d1cbc61fffd9e9a4
-MD5sum: 1ce33c3b0f3d89b3a36747dcddd68215
+Filename: pool/main/s/smss/smss_0.3dev3_all.deb
+Size: 134544
+SHA256: 4df0691ef9c1debd9d6ee144064365c2ff517e2cb68405dee5faa90a7162da15
+SHA1: dff139b0c5593c09e3edca47d01d4b1aae1721ef
+MD5sum: f1e0f059ac6b92ed4a3c9a07c91c0d35
 Description: SMSS
  A simple desktop application to send SMSs via the way2sms portal. For more information about way2sms, go to http://way2sms.com/
 
