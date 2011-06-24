@@ -1,15 +1,15 @@
 Package: smss
-Version: 0.3dev4
+Version: 0.3dev5
 Architecture: all
 Maintainer: Rishav Thakker <thakker.rishav@gmail.com>
 Depends: python (>= 2.6), python-gdata (>= 2.0.8-1.1), curl, python-httplib2, python-wxgtk2.8, python-wxtools, wx2.8-i18n
 Priority: optional
 Section: utils
-Filename: pool/main/s/smss/smss_0.3dev4_all.deb
+Filename: pool/main/s/smss/smss_0.3dev5_all.deb
 Size: 134562
-SHA256: 976a87c15b93fe9aa368c4448ea091e568a19fa56bb5a82db650cc127454c84f
-SHA1: 97cdd8b63fa22e17125fa6f6134badd3e7814d23
-MD5sum: e79a2a29fcb4587847f612c0d85c55d4
+SHA256: 726ca1555aa77e2d8724c0a555fcd6bbff5b45cb8382b84f3fbb625801b9d3a6
+SHA1: 6ae1f0554a71f5e04f205cfb8f86459f4763e207
+MD5sum: 4411e873565c6c08f67100148a95e09c
 Description: SMSS
  A simple desktop application to send SMSs via the way2sms portal. For more information about way2sms, go to http://way2sms.com/
 
