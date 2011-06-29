@@ -3,7 +3,7 @@ Label: Rishavs_Repo
 Suite: stable
 Codename: maverick
 Version: 1.0
-Date: Fri, 24 Jun 2011 22:21:46 UTC
+Date: Wed, 29 Jun 2011 18:07:38 UTC
 Architectures: i386 amd64
 Components: main non-free contrib
 Description: Rishav's Repository for maverick

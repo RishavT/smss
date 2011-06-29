@@ -1,38 +1,3 @@
-Package: python-gdata
-Version: 2.0.8-1.1
-Architecture: all
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Gustavo Franco <stratus@debian.org>
-Installed-Size: 16268
-Depends: python, python-support (>= 0.90.0), python (>= 2.5) | python-celementtree | python-elementtree
-Homepage: http://code.google.com/p/gdata-python-client
-Priority: extra
-Section: python
-Filename: pool/main/p/python-gdata/python-gdata_2.0.8-1.1_all.deb
-Size: 1403866
-SHA256: bc15d75983212890a14d391562392da61f953a1d707c2cab5cc7fdef4cad290f
-SHA1: 3b2ca90946e4d256e34d51d32d9f21d7a0b9ae8a
-MD5sum: ac71ac2506c6b53c2197ccc65b7675af
-Description: Google Data Python client library
- The GData (Google data) APIs provide a simple protocol for reading
- and writing data on the web.
- .
- Each of the following Google services provides a Google data API:
-   * Base
-   * Blogger
-   * Calendar
-   * Code Search
-   * Contacts
-   * Document List
-   * Google Apps Provisioning
-   * Notebook
-   * Picasa Web Albums
-   * Spreadsheets
-   * YouTube
- .
- The Google data Python client library provides a library and source
- code that make it easy to access data through Google data APIs.
-
 Package: smss
 Version: 0.3dev5
 Architecture: all
