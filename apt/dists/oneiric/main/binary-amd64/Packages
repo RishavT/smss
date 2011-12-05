@@ -1,0 +1,15 @@
+Package: smss
+Version: 0.3dev8
+Architecture: all
+Maintainer: Rishav Thakker <thakker.rishav@gmail.com>
+Depends: python (>= 2.6), python-gdata (>= 2.0.8-1.1), curl, python-httplib2, python-wxgtk2.8, python-wxtools, wx2.8-i18n
+Priority: optional
+Section: utils
+Filename: pool/main/s/smss/smss_0.3dev8_all.deb
+Size: 134862
+SHA256: 372d89efa3a7c78b0cb79bc3d7bdfccb750a725d1f27917d0bb813246dd4b431
+SHA1: 2db7da8950615a4c015d22948fa8c200c9c4f1af
+MD5sum: c69bb3fe7de6c935f1ff0e4be98989ba
+Description: SMSS
+ A simple desktop application to send SMSs via the fullonsms portal. For more information about fullonsms, go to http://fullonsms.com/
+

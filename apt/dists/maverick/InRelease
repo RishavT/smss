@@ -1,0 +1,105 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Origin: Rishav
+Label: Rishavs_Repo
+Suite: stable
+Codename: maverick
+Version: 1.0
+Date: Mon, 05 Dec 2011 13:28:54 UTC
+Architectures: i386 amd64
+Components: main non-free contrib
+Description: Rishav's Repository for maverick
+MD5Sum:
+ fed6463f121d10a911c999f1998b5f78 635 main/binary-i386/Packages
+ 8fce2dd8566a7489180d3d9eb9ba735d 452 main/binary-i386/Packages.gz
+ a87d06aaa25ae1b703dbc04b78746768 145 main/binary-i386/Release
+ fed6463f121d10a911c999f1998b5f78 635 main/binary-amd64/Packages
+ 8fce2dd8566a7489180d3d9eb9ba735d 452 main/binary-amd64/Packages.gz
+ 22593f4c46f8397cf046bfa9aaa51b17 146 main/binary-amd64/Release
+ d41d8cd98f00b204e9800998ecf8427e 0 main/source/Sources
+ 7029066c27ac6f5ef18d660d5741979a 20 main/source/Sources.gz
+ 307121b6d52441b83ab52543cd25a317 147 main/source/Release
+ d41d8cd98f00b204e9800998ecf8427e 0 non-free/binary-i386/Packages
+ 7029066c27ac6f5ef18d660d5741979a 20 non-free/binary-i386/Packages.gz
+ ca1a4d34da0a09550c863d0095b2acd5 149 non-free/binary-i386/Release
+ d41d8cd98f00b204e9800998ecf8427e 0 non-free/binary-amd64/Packages
+ 7029066c27ac6f5ef18d660d5741979a 20 non-free/binary-amd64/Packages.gz
+ edbab40fa4ca73b4228d357a7875da92 150 non-free/binary-amd64/Release
+ d41d8cd98f00b204e9800998ecf8427e 0 non-free/source/Sources
+ 7029066c27ac6f5ef18d660d5741979a 20 non-free/source/Sources.gz
+ 270652cf0925f10f076ef7fd235f54a6 151 non-free/source/Release
+ d41d8cd98f00b204e9800998ecf8427e 0 contrib/binary-i386/Packages
+ 7029066c27ac6f5ef18d660d5741979a 20 contrib/binary-i386/Packages.gz
+ 72e1220f57abf2e105728fb37e1e7d3d 148 contrib/binary-i386/Release
+ d41d8cd98f00b204e9800998ecf8427e 0 contrib/binary-amd64/Packages
+ 7029066c27ac6f5ef18d660d5741979a 20 contrib/binary-amd64/Packages.gz
+ 597c50fb83d22a963766a0dd8b4b4946 149 contrib/binary-amd64/Release
+ d41d8cd98f00b204e9800998ecf8427e 0 contrib/source/Sources
+ 7029066c27ac6f5ef18d660d5741979a 20 contrib/source/Sources.gz
+ 6fcbd71d97957ed34626c1e86dff8fed 150 contrib/source/Release
+SHA1:
+ 3d678f2843f0c24330802de04d07a4b9a517e435 635 main/binary-i386/Packages
+ 69097974ac8df3aa481a67e38d13b748b44b8b83 452 main/binary-i386/Packages.gz
+ a7f7ff11fec1d1dfafab6d8412db0926e99bfe20 145 main/binary-i386/Release
+ 3d678f2843f0c24330802de04d07a4b9a517e435 635 main/binary-amd64/Packages
+ 69097974ac8df3aa481a67e38d13b748b44b8b83 452 main/binary-amd64/Packages.gz
+ ac1076d9d5291aacf7ed06c396db1ebaf78b6dc3 146 main/binary-amd64/Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/source/Sources
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/source/Sources.gz
+ eb4a46f576e247df4106083c4eb9e26e951da40e 147 main/source/Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free/binary-i386/Packages
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free/binary-i386/Packages.gz
+ e181ee5d2428c19112709c19aed892d5bf6366bb 149 non-free/binary-i386/Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free/binary-amd64/Packages
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free/binary-amd64/Packages.gz
+ e9899662a3011d2ef81cf55f5bec8d890b32a499 150 non-free/binary-amd64/Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free/source/Sources
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free/source/Sources.gz
+ 455ce065c252bdf12b2a8a0d81ce21a8eaacd116 151 non-free/source/Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 contrib/binary-i386/Packages
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 contrib/binary-i386/Packages.gz
+ 2842423210a0dfdf976cb8607863f677130b9243 148 contrib/binary-i386/Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 contrib/binary-amd64/Packages
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 contrib/binary-amd64/Packages.gz
+ d089a624ab07c7073bd809e8181d8923b3e60bc0 149 contrib/binary-amd64/Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 contrib/source/Sources
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 contrib/source/Sources.gz
+ 92ec37ad6c70fa3ca8862b7189a6ecaf21cdae0d 150 contrib/source/Release
+SHA256:
+ 35c3d5aafe585e8b3153793dae53c563a5b2e9d80ee48a3f55723393769d318b 635 main/binary-i386/Packages
+ 261665366b4933621c6b1bcddb8e865acc3068180e6fff0be7fe72b7a7505ce1 452 main/binary-i386/Packages.gz
+ 610f374e48d99a5a0724819a012b22b7c157b10356dda1a16b9886c54ffd0d6c 145 main/binary-i386/Release
+ 35c3d5aafe585e8b3153793dae53c563a5b2e9d80ee48a3f55723393769d318b 635 main/binary-amd64/Packages
+ 261665366b4933621c6b1bcddb8e865acc3068180e6fff0be7fe72b7a7505ce1 452 main/binary-amd64/Packages.gz
+ 6589d6199acfb5916dd3997a527a9e4ef45b76042780c8067485062f8b1b83e4 146 main/binary-amd64/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/source/Sources
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/source/Sources.gz
+ f3d829ac75de5cf1fc50def6524bb5a018f202627ac520bcdea41819cb91c13e 147 main/source/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free/binary-i386/Packages
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free/binary-i386/Packages.gz
+ b71b08598f54c393c23fa91c2aff5217d987d626d246e167cfd643bffe16a6f3 149 non-free/binary-i386/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free/binary-amd64/Packages
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free/binary-amd64/Packages.gz
+ eba1f63b711289a21e52b71975ae91d7615636cbf320dd5a9da790363a46f883 150 non-free/binary-amd64/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free/source/Sources
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free/source/Sources.gz
+ 2be585d6a8d8f4ade6c27180bc6f4bd4e0d8f1d86bfbec624e582e26a6860a5e 151 non-free/source/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 contrib/binary-i386/Packages
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 contrib/binary-i386/Packages.gz
+ da08a6e906368ac4ebf5f72efcda5d9bdd8c58bb0e503c7bb77828297734fc9c 148 contrib/binary-i386/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 contrib/binary-amd64/Packages
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 contrib/binary-amd64/Packages.gz
+ a3864fd3ee9349d4f7e868766995b266e9067a020926babfde5cb63f6aa03d51 149 contrib/binary-amd64/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 contrib/source/Sources
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 contrib/source/Sources.gz
+ bba6749130c9df057c508d77e522392f7ac27cda229274588d52e45751efa584 150 contrib/source/Release
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iJwEAQECAAYFAk7cxxYACgkQIcKbm02DFf2H4QQAgR7a38PPFnp2LfXxgmGkjgvQ
+aK4dCoNqvUBzqdCubILgtdLvDbn4WWlDcKOk57r47y7XeKOAuZzUalY61w8kgH70
+mW2UkRkM7Uhe9+PMmKlJP99SmFBTW7BG7yHtMbS8Hcx8aFadbskk7vGdwQpdeIRN
+a+ll7CqGJfhifG8KU0k=
+=CNLY
+-----END PGP SIGNATURE-----
