@@ -27,3 +27,13 @@ SignWith: default
 Architectures: i386 amd64 source
 Components: main non-free contrib
 Description: Rishav's Repository for lucid
+
+Origin: Rishav
+Label: Rishavs_Repo
+Suite: stable
+Codename: oneiric
+Version: 1.0
+SignWith: default
+Architectures: i386 amd64 source
+Components: main non-free contrib
+Description: Rishav's Repository for oneiric
