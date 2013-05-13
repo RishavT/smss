@@ -1,5 +1,5 @@
 #!/usr/bin/python
-f = open("installable","w")
+f = open("installable",'w')
 boolean = True
 print "Checking for dependencies..."
 x = "wx -> present"
