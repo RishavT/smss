@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import os
 import wx
-import sms
+import sms2 as sms
 import Contacts
 import sys
 homedir = os.getenv("HOME")
