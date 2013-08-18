@@ -261,12 +261,13 @@ class smsHandler():
        self.br.close()
        print ">>> Done."
 def login(username,password):
-  try:
-    handler = smsHandler(username,password)
-  except:
-    return False
-def send(number,message):
-  try:
-    handler.do(options.number,options.text)
-  except:
-    return False
+    try:
+      handler = smsHandler(username,password)
+      return handler
+    except:
+      return False
+def send(number,message,handler):
+    try:
+      handler.do(number,message)
+    except:
+      return False
