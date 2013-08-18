@@ -490,7 +490,7 @@ For more information, see http://www.gnu.org/licenses """
 				message_body = message_body[140:]
 			for x in message:
 				if x <> "":
-					temp = sms.send(xy,x,self.temp2)
+					temp = sms.send(xy,x)
 			if temp:
 				true+=1
 			else:
